@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Catalog</title>
+</head>
+<body>
+    <div class="container">
+        <form id="productForm">
+            <h2>Product Catalog</h2>
+            <div class="product">
+                <label for="quantityA">Product A Quantity:</label>
+                <input type="number" id="quantityA" name="quantityA" required>
+                <label for="giftWrapA">Gift Wrap?</label>
+                <input type="checkbox" id="giftWrapA" name="giftWrapA">
+            </div>
+            <div class="product">
+                <label for="quantityB">Product B Quantity:</label>
+                <input type="number" id="quantityB" name="quantityB" required>
+                <label for="giftWrapB">Gift Wrap?</label>
+                <input type="checkbox" id="giftWrapB" name="giftWrapB">
+            </div>
+            <div class="product">
+                <label for="quantityC">Product C Quantity:</label>
+                <input type="number" id="quantityC" name="quantityC" required>
+                <label for="giftWrapC">Gift Wrap?</label>
+                <input type="checkbox" id="giftWrapC" name="giftWrapC">
+            </div>
+            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Order Summary</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
